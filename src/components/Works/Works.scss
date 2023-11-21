@@ -14,16 +14,16 @@
     animation: background__page .9s ease-in-out forwards;
     @include slide__page;
     .nav__home {
-      width: 20vw;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       position: fixed;
       .nav__link__item {
         display: flex;
         align-items: center;
-        margin-right: 2rem;
+        transform: rotate(-90deg);
+        margin-bottom: 2rem;
         a {
         text-decoration: none;
         color: $color_white;
@@ -31,8 +31,8 @@
         @include underline__nav__item;
       }
       .nav__line__item {
-        width: 22rem;
-        height: 1px;
+        width: 1px;
+        height: 10rem;
         background-color: $color_white; 
       }
     }
