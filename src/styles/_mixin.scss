@@ -1,0 +1,54 @@
+// Mixin :
+
+@mixin slide__home {
+  @keyframes mainBlock {
+    0% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0;
+      left: 100%;
+    }
+  }
+}
+
+@mixin slide__page {
+  @keyframes background__page {
+    0% {
+      top:-51rem;
+    }
+    100% {
+      top: 0;
+    }
+  }
+}
+
+@mixin mixin__title__up {
+  @keyframes title__up {
+    0% {
+      bottom: -21rem;
+    }
+    100% {
+      bottom: 3rem;
+      visibility: visible;
+    }
+  }
+}
+
+
+@mixin underline__nav__item {
+  a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  a:hover:after {
+    width: 100%;
+    background: #444;
+  }
+}

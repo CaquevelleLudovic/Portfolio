@@ -1,0 +1,118 @@
+@import '../../styles/variables';
+
+body {
+  
+  .main {
+    display: flex;      
+    height: 100vh;
+    background-color: $color_black;
+    .home__left {
+      height: 100%;
+      width: 60vw;
+      padding: 7rem 0 0 7rem;
+      .presentation {
+        display: flex;
+        height: 5rem;
+        margin-bottom: 2rem;
+        .picture__home {
+          height: 100%;
+          
+          img {
+          margin: 0 auto;
+          height: 100%;
+          border-radius: 50%;
+          }
+        }
+        .description__home {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          color:$color_white ;
+          font-family: $font_montserrat ;
+          margin-left: 1rem;
+          h1 {
+            font-weight: 700;
+          }
+          h3 {
+            font-weight: 300;
+          }
+        }
+      }
+      .nav__social__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 3rem;
+        height: 30rem;
+        margin-left: 1rem;
+        .nav__link__item {
+          display: flex;
+          transform: rotate(-90deg);
+          align-items: center;
+          a {
+          text-decoration: none;
+          color: $color_white;
+          }
+          @include underline__nav__item;
+        }
+        .nav__line__item {
+          width: 1px;
+          height: 10rem;
+          background-color: $color_white; 
+        }
+      }
+    }
+    .home__right {
+      height: 100%;
+      width: 50vw;
+      margin-right: 1rem;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        .nav__item { 
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          height: 25%;
+          li {
+            list-style-type:none;
+            font-family: $font_anton;
+            font-size: 10rem;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            color: $color_yellow;
+            .nav__link {
+              text-decoration: none;
+              color: $color_yellow;
+              transition: font-size 0.5s ease-in-out;
+            } :hover {
+              font-size: 10.5rem;
+              transition: font-size 0.5s ease-in-out;
+              }
+          }
+          .block {
+            width: 100%;
+            height: inherit;
+            background: $color_black;
+            position: absolute;
+            animation: mainBlock 2s ease-in-out forwards;
+            @include slide__home;
+          }
+        }
+        .nav__item:nth-child(2) .block {
+          animation-delay: 0.2s;
+        }
+        .nav__item:nth-child(3) .block {
+          animation-delay: 0.4s;
+        }
+      }
+      
+    }
+  }
+}
+

@@ -1,28 +1,20 @@
-import logo from '../../assets/logo.svg';
-
 import './App.scss';
+import Home from '../Home/Home';
+import Contact from '../Contact/Contact';
+import About from '../About/About';
+import Works from '../Works/Works';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
-        <p>
-          Edit <code>src/components/App/App.tsx</code> and save to reload.
-        </p>
-
-        <a
-          className="App-link"
-          href="https://react.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Works" element={<Works />} />
+    </Routes>
   );
 }
 
 export default App;
+
