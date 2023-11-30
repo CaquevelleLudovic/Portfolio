@@ -1,5 +1,6 @@
-import React from 'react'
-import './About.scss'
+import React from 'react';
+import './About.scss';
+import Footer from '../Footer/Footer';
 
 function About() {
   return (
@@ -18,21 +19,22 @@ function About() {
       <div className="container__about_texte">
         <div className="about__texte">
           <img src="src/assets/img/personal_photo.jpg" alt="" />
-          <h3>Who i am ?</h3>
+          <h3>Who I am?</h3>
           <p>
-            Hello, my name is Caquevelle Ludovic, i am a graduate in FrontEnd Web development, but also a self-taught Designer. I enjoy being in contact with clients and creating a website in their image while keeping an attractive and immersive design for users.
+            Hello, my name is Caquevelle Ludovic. I am a graduate in FrontEnd Web development, but also a self-taught Designer. I enjoy being in contact with clients and creating a website in their image while keeping an attractive and immersive design for users.
             <br />
-            I have a passion for Video Games, mangas and comics. I try to do weekly technology watch in order to stay up to date on new developments and discover new libraries or frameworks.
+            I have a passion for Video Games, mangas, and comics. I try to do weekly technology watch in order to stay up to date on new developments and discover new libraries or frameworks.
             <br />
-            To find out more here is my CV
+            To find out more, here is my CV.
           </p>
         </div>
         <div className="about__cv">
           <a href="https://drive.google.com/file/d/1q--_3IOyAZnjk1YJ3s7RmNcGprfugLGx/view?usp=sharing">My CV</a>
         </div>
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default About
+export default About;
