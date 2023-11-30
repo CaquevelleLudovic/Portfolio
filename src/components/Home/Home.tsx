@@ -14,21 +14,21 @@ function Home() {
           </div>
           <div className="description__home">
             <h1>Caquevelle Ludovic</h1>
-            <h3>Developer Front-End</h3>
+            <h3>Developer Front-End / Website Integrator</h3>
           </div>
         </div>
         <div className="nav__social__link">
           <div className="nav__link__item">
-            <a href="www.google.fr">Git</a>
+            <a href="https://github.com/CaquevelleLudovic">Git</a>
           </div>
           <div className="nav__link__item">
             <a href="www.google.fr">Inst</a>
           </div>
           <div className="nav__link__item">
-            <a href="www.google.fr">Malt</a>
+            <a href="https://www.malt.fr/profile/ludoviccaquevelle">Malt</a>
           </div>
           <div className="nav__link__item">
-            <a href="www.google.fr">Link</a>
+            <a href="https://www.linkedin.com/in/ludovic-caquevelle/">Link</a>
           </div>
           <div className="nav__line__item" />
         </div>
