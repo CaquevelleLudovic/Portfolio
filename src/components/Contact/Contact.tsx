@@ -2,6 +2,7 @@ import './Contact.scss'
 import { RiLinkedinBoxFill,RiInstagramFill,RiGithubFill } from "react-icons/ri";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Footer from '../Footer/Footer';
 
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -76,6 +77,7 @@ function Contact() {
           </div>
         </form>
       </div>
+      <Footer />
     </div>
   )
 }
