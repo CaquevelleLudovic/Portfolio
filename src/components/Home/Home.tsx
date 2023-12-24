@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Home() {
   return (
     <div className="main">
-      <div className="home__left">
+      <div className="home__left " id='home__left__responsive'>
         <div className="presentation">
           <div className="picture__home">
             <img
@@ -17,7 +17,7 @@ function Home() {
             <h3>Developer Front-End / Website Integrator</h3>
           </div>
         </div>
-        <div className="nav__social__link">
+        <div className="nav__social__link" id='responsive__nav__social__link'>
           <div className="nav__link__item">
             <a href="https://github.com/CaquevelleLudovic">Git</a>
           </div>
@@ -33,7 +33,7 @@ function Home() {
           <div className="nav__line__item" />
         </div>
       </div>
-      <div className="home__right">
+      <div className="home__right" id='home__right__responsive'>
         <nav>
           <ul>
             <div className="nav__item">

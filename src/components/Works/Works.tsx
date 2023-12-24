@@ -4,7 +4,7 @@ import { projectDatasTab } from '../../assets/datas/projectDatas.d';
 import { FaCircle } from "react-icons/fa6";
 
 function Works() {
-  const [faqDatas, setFaqDatas] = useState(projectDatasTab);
+  const [proDatas, setProDatas] = useState(projectDatasTab);
   
   return (
     <div className='main__work'>
@@ -22,12 +22,12 @@ function Works() {
           <p>Here is a showcase of my completed projects including the graphic charter, design and website</p>
         </div>
         <div className="container__works__right">
-          {faqDatas.map((faqData, index) => (
+          {proDatas.map((proData, index) => (
             <div className="container__project" key={index}>
-              <a href={faqData.url}>{faqData.title}</a>
+              <a href={proData.url}>{proData.title}</a>
               <span>
                 <FaCircle color='#e0ab5a'/>
-                <p>{faqData.tools}</p>
+                <p>{proData.tools}</p>
               </span>
             </div>
           ))}
